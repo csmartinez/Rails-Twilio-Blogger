@@ -12,12 +12,15 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.5', require: "bcrypt"
 gem 'rails_12factor', group: :production
+gem 'rest-client'
 
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'quiet_assets'
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
 end
 
 group :test, :development do
@@ -26,6 +29,8 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 ruby "2.2.0"

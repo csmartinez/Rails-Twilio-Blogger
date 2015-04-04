@@ -119,3 +119,7 @@ input {
 a:hover {
   color: white;
 }
+
+.comment_form {
+  display: none;
+}
